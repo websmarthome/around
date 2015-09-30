@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AROUND</string>
+    <string name="bluetooth_error">Bluetooth Error</string>
+    <string name="no_bluetooth">This device does not have Bluetooth</string>
+    <string name="no_bluetooth_advertise">This device does not support Bluetooth LE advertising</string>
+    <string name="ok">OK</string>
+    <string name="hello_world">Hello World</string>
+    <string name="empty">データがありません</string>
+
+    <string name="action_debug">Debug</string>
+
+    <string name="button_label_open_app">アプリで開く</string>
+    <string name="button_label_open_store">ストアで開く</string>
+
+    <string name="nearby_metadata">周辺のメタデータ</string>
+
+    <string name="clear_list">リストをクリア</string>
+    <string name="clear_list_done">リストをクリアしました</string>
+
+    <string name="debug_settings">設定</string>
+    <string name="use_mock_ble_scanner">モックのスキャナーを使う</string>
+    <string name="use_mock_ble_scanner_summary">変更は再起動後、有効です</string>
+    <string name="use_mock_metadata_resolver">モックのリゾルバを使う</string>
+    <string name="use_mock_metadata_resolver_summary">変更は再起動後、有効です</string>
+    <string name="debug_beacon_history_title">Beaconスキャン履歴</string>
+    <string name="debug_beacon_history_summary">スキャンされたBeaconの一覧</string>
+    <string name="debug_randomize_metadata_location">メタデータの位置情報をばらける</string>
+    <string name="randomize_metadata_location_done">メタデータの位置情報をランダムにばらけました</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AROUND</string>
+
+    <string name="main_beacon_count_message">beacon %d found</string>
+    <string name="main_pairing_disconnect_message">pairing disconnected</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AROUND</string>
+
+    <!-- MainActivity -->
+    <string name="error_bluetooth_not_found">bluetooth非搭載機器では動作しません。\n終了します。</string>
+    <string name="error_bluetooth_reject">bluetoothが有効でなければ動作しません。\n終了します。</string>
+    <string name="menu_turn_off_ble_mock">Turn off ble mock</string>
+    <string name="menu_turn_on_ble_mock">Turn on ble mock</string>
+    <string name="menu_turn_off_meta_mock">Turn off meta mock</string>
+    <string name="menu_turn_on_meta_mock">Turn on meta mock</string>
+    <string name="menu_clear_database">Clear database</string>
+    <string name="message_menu_off_ble_mock">ble mock off</string>
+    <string name="message_menu_on_ble_mock">ble mock on</string>
+    <string name="message_menu_off_meta_mock">meta mock off</string>
+    <string name="message_menu_on_meta_mock">meta mock on</string>
+    <string name="message_clear_database">clear success</string>
+
+</resources>

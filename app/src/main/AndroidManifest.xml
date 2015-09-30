@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.recruit_tech.around.beaconclient" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:name="jp.co.recruit_tech.around.beaconclient.BeaconClientApplication"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6y_uR42KxfBurPSD8U_KSVxkrEG9gFWM" />
+
+        <activity
+            android:name="jp.co.recruit_tech.around.beaconclient.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jp.co.recruit_tech.around.beaconclient.sitedetail.SiteDetailActivity">
+        </activity>
+        <activity
+            android:name="jp.co.recruit_tech.around.beaconclient.debug.DebugMainActivity">
+        </activity>
+        <activity
+            android:name=".debug.DebugSettingsActivity">
+        </activity>
+        <activity
+            android:name="jp.co.recruit_tech.around.beaconclient.debug.ScannedBeaconHistoryActivity">
+        </activity>
+        <activity
+            android:name=".nearby.NearbyUrlMetadataActivity" />
+        <service
+            android:name="jp.co.recruit_tech.around.beaconlibrary.service.BeaconLibraryMainService"
+            android:exported="false" />
+        <service
+            android:name="jp.co.recruit_tech.around.beaconclient.service.WearService"
+            android:exported="false" />
+        <receiver
+            android:name=".service.BootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </receiver>
+
+    </application>
+
+</manifest>

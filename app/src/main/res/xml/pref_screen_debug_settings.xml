@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="use_mock_ble_scanner"
+        android:title="@string/use_mock_ble_scanner"
+        android:summary="@string/use_mock_ble_scanner_summary" />
+
+    <CheckBoxPreference
+        android:key="use_mock_metadata_resolver"
+        android:title="@string/use_mock_metadata_resolver"
+        android:summary="@string/use_mock_metadata_resolver_summary" />
+
+    <PreferenceScreen
+        android:key="beacon_history"
+        android:title="@string/debug_beacon_history_title"
+        android:summary="@string/debug_beacon_history_summary" />
+
+    <PreferenceScreen
+        android:key="randomize_metadata_location"
+        android:title="@string/debug_randomize_metadata_location" />
+
+</PreferenceScreen>

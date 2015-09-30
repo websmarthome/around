@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <jp.co.recruit_tech.around.beaconclient.view.IconImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_view"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:maxWidth="64dp"
+        android:maxHeight="64dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/chevron"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_width="wrap_content"
+        android:minWidth="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-14dp"
+        android:minHeight="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_view"
+        android:layout_toLeftOf="@id/chevron">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/title_view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:id="@+id/description_view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#999999"
+            android:textSize="11sp"
+            android:layout_gravity="right"
+            android:id="@+id/scanned_at_view" />
+
+        <Button
+            android:id="@+id/open_app_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/button_label_open_app"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/open_store_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/button_label_open_store"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

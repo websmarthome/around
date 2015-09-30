@@ -1,0 +1,56 @@
+[
+    {
+        id: "1",
+        url: "http://google.co.jp/",
+        title: "Google JP",
+        description: "検索エンジン",
+        icon: "/favicon.ico"
+    },
+    {
+        id: "2",
+        url: "http://yahoo.co.jp/",
+        title: "Yahoo",
+        description: "日本国内最大のポータルサイト",
+        icon: "/favicon.ico"
+    },
+    {
+         id: "3",
+         url: "http://github.com/",
+         title: "Github",
+         description: "Gitを使ったソフトウェア開発プロジェクトのための共有ウェブサービス",
+         icon: "/favicon.ico"
+    },
+    {
+        id: "4",
+        url: "http://twitter.com/",
+        title: "Twitter",
+        description: "140文字以内の「ツイート」と称される短文を投稿できる情報サービス",
+        icon: "/favicon.ico",
+        "json-ld": {
+            "@context":"http://example.org",
+            "@type":"AppLinks",
+            "android":[{
+                "@type":"Android",
+                "app_name":"Twitter",
+                "package":"com.twitter.android"
+            }],
+            "ios":[{
+                "@type":"iOS",
+                "app_name":"Twitter",
+                "app_store_id":"333903271",
+                "url":"twitter://timeline"
+            }],
+            "web":{
+                "@type":"Web",
+                "url":"http://phyweb-demo.net/restaurant/"
+            }
+        }
+    },
+    {
+        id: "5",
+        url: "http://facebook.com/",
+        title: "Facebook",
+        description: "世界で最も使われるソーシャルネットワーキングサービス",
+        icon: "/favicon.ico"
+    }
+]
